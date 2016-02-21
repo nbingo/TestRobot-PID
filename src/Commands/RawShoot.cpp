@@ -31,7 +31,7 @@ void RawShoot::Initialize() {
 void RawShoot::Execute() {
 	double value=1.0;
 	Robot::shooterSystemLeft->RawShootLeft(value);
-	Robot::shooterSystemRight->RawShootRight(value);
+	Robot::shooterSystemRight->RawShootRight(-value);
 }
 
 // Make this return true when this Command no longer needs to run execute()
